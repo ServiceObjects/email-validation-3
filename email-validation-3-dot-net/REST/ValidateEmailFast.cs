@@ -22,8 +22,6 @@ namespace email_validation_3_dot_net.REST
         /// <returns>Deserialized <see cref="EV3Response"/> containing the validation results.</returns>
         public static EV3Response Invoke(ValidateEmailFastInput input)
         {
-            //Use query string parameters so missing/options fields don't break
-            //the URL as path parameters would.
             string url = BuildUrl(input, input.IsLive ? LiveBaseUrl : TrialBaseUrl);
             EV3Response response = Helper.HttpGet<EV3Response>(url, input.TimeoutSeconds);
 
@@ -47,8 +45,6 @@ namespace email_validation_3_dot_net.REST
         /// <returns>Deserialized <see cref="EV3Response"/> containing the validation results.</returns>
         public static async Task<EV3Response> InvokeAsync(ValidateEmailFastInput input)
         {
-            //Use query string parameters so missing/options fields don't break
-            //the URL as path parameters would.
             string url = BuildUrl(input, input.IsLive ? LiveBaseUrl : TrialBaseUrl);
             EV3Response response = await Helper.HttpGetAsync<EV3Response>(url, input.TimeoutSeconds).ConfigureAwait(false);
 
