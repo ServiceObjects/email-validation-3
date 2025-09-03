@@ -17,10 +17,6 @@ ValidateEmailAddress: Validates and verifies an email address via a full suite o
 
 ## ValidateEmailAddress Request URLs (Query String Parameters)
 
->[!CAUTION]
->### *Important - Use query string parameters for all inputs.  Do not use path parameters since it will lead to errors due to optional parameters and special character issues.*
-
-
 ### JSON
 #### Trial
 
