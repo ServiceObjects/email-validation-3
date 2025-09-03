@@ -5,7 +5,7 @@ from suds.sudsobject import Object
 
 class ValidateEmailFastNoCorrectionsSoap:
     
-  def __init__(self,email_address: str, license_key: str, is_live: bool, timeout_ms: int = 10000):
+  def __init__(self, license_key: str, is_live: bool, timeout_ms: int = 10000):
         """
         license_key: Service Objects EV3 license key.
         is_live: Whether to use live or trial endpoints
@@ -17,9 +17,8 @@ class ValidateEmailFastNoCorrectionsSoap:
         self._timeout_s = timeout_ms / 1000.0  
         self._is_live = is_live
         self.license_key = license_key
-        self.email_address = email_address
-        # WSDL URLs 
 
+        # WSDL URLs 
         self._primary_wsdl = (
             'https://sws.serviceobjects.com/ev3/api.svc?wsdl'
             if is_live else
@@ -31,7 +30,7 @@ class ValidateEmailFastNoCorrectionsSoap:
             'https://trial.serviceobjects.com/ev3/api.svc?wsdl'
         )
 
-  def validate_email_fast_no_corrections(self) -> Object:
+  def validate_email_fast_no_corrections(self, email_address: str) -> Object:
         """
         Call EV3 ValidateEmailFastNoCorrections SOAP API to retrieve the information.
         
@@ -46,7 +45,7 @@ class ValidateEmailFastNoCorrectionsSoap:
         """
         # Common kwargs for both calls
         call_kwargs = dict(
-            EmailAddress=self.email_address,
+            EmailAddress=email_address,
             LicenseKey=self.license_key,
         )
 

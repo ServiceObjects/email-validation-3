@@ -1,6 +1,3 @@
-
-
-
 import sys
 import os
 
@@ -23,8 +20,8 @@ def  validate_email_fast_soap_sdk_go(is_live: bool, license_key: str) -> None:
   print(f"Timeout Seconds: {timeoutSeconds}");
 
   try:
-      service= ValidateEmailFastSoap(email_address,license_key,is_live,timeoutSeconds)
-      response=service.validate_email_fast()
+      service= ValidateEmailFastSoap(license_key, is_live, timeoutSeconds)
+      response=service.validate_email_fast(email_address)
 
       if not hasattr(response, 'Error'):
        print("\r\n* Email Validation Details *\r\n");

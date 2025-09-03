@@ -51,8 +51,8 @@ timeoutSeconds = 15;
 from validate_email_address_soap import ValidateEmailAddressSoap
 
 # 2. Call the method
-service = ValidateEmailAddressSoap(email_address,allow_corrections,timeout,license_key, is_live,timeoutSeconds)
-response=service.validate_email_address()
+service = ValidateEmailAddressSoap(license_key, is_live,timeoutSeconds)
+response=service.validate_email_address(email_address, allow_corrections, timeout)
 
 # 3. Inspect results.
 if not hasattr(response, 'Error'):
@@ -109,8 +109,8 @@ timeoutSeconds = 15;
 from validate_email_full_soap import ValidateEmailFullSoap  
 
 # 2. Call the method
-service =ValidateEmailFullSoap(email_address,license_key,is_live,timeoutSeconds)
-response=service.validate_email_full()
+service = ValidateEmailFullSoap(license_key, is_live, timeoutSeconds)
+response = service.validate_email_full(email_address)
 
 # 3. Inspect results.
 if not hasattr(response, 'Error'):
@@ -165,8 +165,8 @@ timeoutSeconds = 15;
 from validate_email_full_no_corrections_soap import ValidateEmailFullNoCorrectionsSoap
 
 # 2. Call the method
-service=ValidateEmailFastNoCorrectionsSoap(email_address,license_key,is_live,timeoutSeconds)
-response=service.validate_email_fast_no_corrections()
+service = ValidateEmailFastNoCorrectionsSoap(license_key, is_live, timeoutSeconds)
+response = service.validate_email_fast_no_corrections(email_address)
 
 # 3. Inspect results.
 if not hasattr(response, 'Error'):
@@ -221,8 +221,8 @@ timeoutSeconds = 15;
 from validate_email_fast_soap import ValidateEmailFastSoap
 
 # 2. Call the method
- service= ValidateEmailFastSoap(email_address,license_key,is_live,timeoutSeconds)
- response=service.validate_email_fast()
+ service = ValidateEmailFastSoap(license_key, is_live, timeoutSeconds)
+ response = service.validate_email_fast(email_address)
 
 # 3. Inspect results.
 if not hasattr(response, 'Error'):
@@ -277,8 +277,8 @@ timeoutSeconds = 15;
 from validate_email_full_no_corrections_soap import ValidateEmailFullNoCorrectionsSoap
 
 # 2. Call the method
-service =ValidateEmailFullNoCorrectionsSoap(email_address,license_key,is_live,timeoutSeconds)
-response=service.validate_email_full_no_corrections()
+service = ValidateEmailFullNoCorrectionsSoap(license_key, is_live, timeoutSeconds)
+response = service.validate_email_full_no_corrections(email_address)
 
 # 3. Inspect results.
 if response.Error is None:

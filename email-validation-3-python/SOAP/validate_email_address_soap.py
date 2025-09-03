@@ -5,7 +5,7 @@ from suds.sudsobject import Object
 
 class ValidateEmailAddressSoap:
     
-  def __init__(self,email_address: str,allow_corrections: str,timeout:str, license_key: str, is_live: bool, timeout_ms: int = 30000):
+  def __init__(self, license_key: str, is_live: bool, timeout_ms: int = 30000):
         """
         license_key: Service Objects EV3 license key.
         is_live: Whether to use live or trial endpoints
@@ -17,12 +17,8 @@ class ValidateEmailAddressSoap:
         self._timeout_s = timeout_ms / 1000.0  
         self._is_live = is_live
         self.license_key = license_key
-        self.email_address = email_address
-        self.allow_corrections = allow_corrections
-        self.timeout = timeout 
 
         # WSDL URLs
-
         self._primary_wsdl = (
             'https://sws.serviceobjects.com/ev3/api.svc?wsdl'
             if is_live else
@@ -34,7 +30,7 @@ class ValidateEmailAddressSoap:
             'https://trial.serviceobjects.com/ev3/api.svc?wsdl'
         )
 
-  def validate_email_address(self) -> Object:
+  def validate_email_address(self, email_address: str, allow_corrections: str, timeout:str) -> Object:
         """
         Call EV3 ValidateEmailAddress SOAP  API to retrieve the information.
         
@@ -42,9 +38,6 @@ class ValidateEmailAddressSoap:
             email_address: The email address to validate.
             allow_corrections: "true" or "false" - whether the API can return a corrected email.
             timeout: Timeout value in string format (passed to the service).
-            license_key: Your Service Objects license key.
-            is_live: Determines whether to use the live or trial servers.
-            timeout_ms: Timeout, in milliseconds, for the call to the service.
 
         Returns:
             suds.sudsobject.Object: SOAP response containing validation details or error.
@@ -52,9 +45,9 @@ class ValidateEmailAddressSoap:
 
         # Common kwargs for both calls
         call_kwargs = dict(
-            EmailAddress=self.email_address,
-            AllowCorrections=self.allow_corrections,
-            Timeout=self.timeout,
+            EmailAddress=email_address,
+            AllowCorrections=allow_corrections,
+            Timeout=timeout,
             LicenseKey=self.license_key,
         )
 
