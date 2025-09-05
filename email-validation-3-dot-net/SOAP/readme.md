@@ -32,7 +32,7 @@ Average mail server response times are approximately between 2-3 seconds, but so
 
 ```
 // 1 Instantiate the service wrapper
-   var ev3 = new ValidateEmailAddress(true);
+ValidateEmailAddressValidation validateEmailAddressValidation = new ValidateEmailAddressValidation(true);
 
 // 2 Provide your input data
 //  Required fields:
@@ -44,14 +44,12 @@ Average mail server response times are approximately between 2-3 seconds, but so
 // 
 // Optional:
 //        TimeoutSeconds (default: 15)
-
-// 3 Call the service
 string EmailAddress = "Johan@gmail.com";
 string AllowCorrections = "true";
 string Timeout = "10000";
-string LicenseKey = licenseK
+string LicenseKey = licenseKey
 
-ValidateEmailAddressValidation validateEmailAddressValidation = new ValidateEmailAddressValidation(isLive);
+// 3 Call the service
 ValidateEmailResponse response= await validateEmailAddressValidation.ValidateEmailAddress(EmailAddress,AllowCorrections,Timeout,LicenseKey).Result;
 
 // 4. Inspect results.
@@ -99,7 +97,7 @@ The average response time for this operation is approximately 2 seconds, but the
 
 ```
 // 1 Instantiate the service wrapper
-var ev3 = new ValidateEmailFull(true);
+ValidateEmailFullValidation validateEmailFullValidation = new ValidateEmailFullValidation(true);
 
 // 2 Provide your input data
 //  Required fields:
@@ -109,12 +107,10 @@ var ev3 = new ValidateEmailFull(true);
 // 
 // Optional:
 //        TimeoutSeconds (default: 15)
-
-// 3 Call the service
 string EmailAddress = "Johan@gmail.com";
 string LicenseKey = licenseKey;
 
-ValidateEmailFullValidation validateEmailFullValidation = new ValidateEmailFullValidation(isLive);
+// 3 Call the service
 ValidateEmailResponse response = validateEmailFullValidation.ValidateEmailFull(EmailAddress, LicenseKey).Result;
 
 // 4. Inspect results.
@@ -159,7 +155,7 @@ The same as ValidateEmailFull but the service will not attempt to correct the em
 
 ```
 // 1 Instantiate the service wrapper
-var ev3 = new validateEmailFullNoCorrections(true);
+ValidateEmailFullNoCorrectionsValidation validateEmailFullNoCorrectionsValidation = new ValidateEmailFullNoCorrectionsValidation(true);
 
 // 2 Provide your input data
 //  Required fields:
@@ -169,13 +165,12 @@ var ev3 = new validateEmailFullNoCorrections(true);
 // 
 // Optional:
 //        TimeoutSeconds (default: 15)
-
-// 3 Call the service
 string EmailAddress = "Johan@gmail.com";
 string LicenseKey = licenseKey;
 
-ValidateEmailFullNoCorrectionsValidation validateEmailFullNoCorrectionsValidation = new ValidateEmailFullNoCorrectionsValidation(isLive);
+// 3 Call the service
 ValidateEmailResponse response = validateEmailFullNoCorrectionsValidation.ValidateEmailFullNoCorrections(EmailAddress, LicenseKey).Result;
+
 // 4. Inspect results.
 if (response.Error is null && response.ValidateEmailInfo != null)
 {
@@ -218,7 +213,7 @@ This operation has the same inputs and outputs as ValidateEmailFull. This check 
 
 ```
 // 1 Instantiate the service wrapper
-var ev3 = new ValidateEmailFast(true);
+ValidateEmailFastValidation validateEmailFastValidation = new ValidateEmailFastValidation(true);
 
 // 2 Provide your input data
 //  Required fields:
@@ -228,12 +223,10 @@ var ev3 = new ValidateEmailFast(true);
 // 
 // Optional:
 //        TimeoutSeconds (default: 15)
-
-// 3 Call the service
 string EmailAddress = "Johan@gmail.com";
 string LicenseKey = licenseKey;
 
-ValidateEmailFastValidation validateEmailFastValidation = new ValidateEmailFastValidation(isLive);
+// 3 Call the service
 ValidateEmailResponse response = validateEmailFastValidation.ValidateEmailFast(EmailAddress, LicenseKey).Result;
 
 // 4. Inspect results.
@@ -278,7 +271,7 @@ The same as ValidateEmailFast but the service will not attempt to correct the em
 
 ```
 // 1 Instantiate the service wrapper
-   var ev3 = new ValidateEmailFullNoCorrections(true);
+ValidateEmailFullNoCorrectionsValidation validateEmailFullNoCorrectionsValidation = new ValidateEmailFullNoCorrectionsValidation(true);
 
 // 2 Provide your input data
 //  Required fields:
@@ -288,12 +281,10 @@ The same as ValidateEmailFast but the service will not attempt to correct the em
 // 
 // Optional:
 //        TimeoutSeconds (default: 15)
-
-// 3 Call the service
 string EmailAddress = "Johan@gmail.com";
 string LicenseKey = licenseKey;
 
-ValidateEmailFullNoCorrectionsValidation validateEmailFullNoCorrectionsValidation = new ValidateEmailFullNoCorrectionsValidation(isLive);
+// 3 Call the service
 ValidateEmailResponse response = validateEmailFullNoCorrectionsValidation.ValidateEmailFullNoCorrections(EmailAddress, LicenseKey).Result;
 
 // 4. Inspect results.
