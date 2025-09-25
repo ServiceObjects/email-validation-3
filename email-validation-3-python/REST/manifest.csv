@@ -1,0 +1,8 @@
+Filename,RawURL
+ev3_response.py,https://raw.githubusercontent.com/ServiceObjects/email-validation-3/master/email-validation-3-python/REST/ev3_response.py
+readme.md,https://raw.githubusercontent.com/ServiceObjects/email-validation-3/master/email-validation-3-python/REST/readme.md
+validate_email_address_rest.py,https://raw.githubusercontent.com/ServiceObjects/email-validation-3/master/email-validation-3-python/REST/validate_email_address_rest.py
+validate_email_fast_no_corrections_rest.py,https://raw.githubusercontent.com/ServiceObjects/email-validation-3/master/email-validation-3-python/REST/validate_email_fast_no_corrections_rest.py
+validate_email_fast_rest.py,https://raw.githubusercontent.com/ServiceObjects/email-validation-3/master/email-validation-3-python/REST/validate_email_fast_rest.py
+validate_email_full_no_corrections_rest.py,https://raw.githubusercontent.com/ServiceObjects/email-validation-3/master/email-validation-3-python/REST/validate_email_full_no_corrections_rest.py
+validate_email_full_rest.py,https://raw.githubusercontent.com/ServiceObjects/email-validation-3/master/email-validation-3-python/REST/validate_email_full_rest.py
