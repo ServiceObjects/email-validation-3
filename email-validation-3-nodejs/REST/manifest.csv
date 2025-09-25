@@ -1,0 +1,8 @@
+Filename,RawURL
+ev3_response.js,https://raw.githubusercontent.com/ServiceObjects/email-validation-3/master/email-validation-3-nodejs/REST/ev3_response.js
+readme.md,https://raw.githubusercontent.com/ServiceObjects/email-validation-3/master/email-validation-3-nodejs/REST/readme.md
+validate_email_address_rest.js,https://raw.githubusercontent.com/ServiceObjects/email-validation-3/master/email-validation-3-nodejs/REST/validate_email_address_rest.js
+validate_email_fast_no_corrections_rest.js,https://raw.githubusercontent.com/ServiceObjects/email-validation-3/master/email-validation-3-nodejs/REST/validate_email_fast_no_corrections_rest.js
+validate_email_fast_rest.js,https://raw.githubusercontent.com/ServiceObjects/email-validation-3/master/email-validation-3-nodejs/REST/validate_email_fast_rest.js
+validate_email_full_no_corrections_rest.js,https://raw.githubusercontent.com/ServiceObjects/email-validation-3/master/email-validation-3-nodejs/REST/validate_email_full_no_corrections_rest.js
+validate_email_full_rest.js,https://raw.githubusercontent.com/ServiceObjects/email-validation-3/master/email-validation-3-nodejs/REST/validate_email_full_rest.js
