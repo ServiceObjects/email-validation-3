@@ -1,0 +1,7 @@
+Filename,RawURL
+readme.md,https://raw.githubusercontent.com/ServiceObjects/email-validation-3/master/email-validation-3-python/SOAP/readme.md
+validate_email_address_soap.py,https://raw.githubusercontent.com/ServiceObjects/email-validation-3/master/email-validation-3-python/SOAP/validate_email_address_soap.py
+validate_email_fast_no_corrections_soap.py,https://raw.githubusercontent.com/ServiceObjects/email-validation-3/master/email-validation-3-python/SOAP/validate_email_fast_no_corrections_soap.py
+validate_email_fast_soap.py,https://raw.githubusercontent.com/ServiceObjects/email-validation-3/master/email-validation-3-python/SOAP/validate_email_fast_soap.py
+validate_email_full_no_corrections_soap.py,https://raw.githubusercontent.com/ServiceObjects/email-validation-3/master/email-validation-3-python/SOAP/validate_email_full_no_corrections_soap.py
+validate_email_full_soap.py,https://raw.githubusercontent.com/ServiceObjects/email-validation-3/master/email-validation-3-python/SOAP/validate_email_full_soap.py
