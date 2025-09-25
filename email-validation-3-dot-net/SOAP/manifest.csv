@@ -1,0 +1,7 @@
+Filename,RawURL
+readme.md,https://raw.githubusercontent.com/ServiceObjects/email-validation-3/master/email-validation-3-dot-net/SOAP/readme.md
+ValidateEmailAddress.cs,https://raw.githubusercontent.com/ServiceObjects/email-validation-3/master/email-validation-3-dot-net/SOAP/ValidateEmailAddress.cs
+ValidateEmailFast.cs,https://raw.githubusercontent.com/ServiceObjects/email-validation-3/master/email-validation-3-dot-net/SOAP/ValidateEmailFast.cs
+ValidateEmailFastNoCorrections.cs,https://raw.githubusercontent.com/ServiceObjects/email-validation-3/master/email-validation-3-dot-net/SOAP/ValidateEmailFastNoCorrections.cs
+ValidateEmailFull.cs,https://raw.githubusercontent.com/ServiceObjects/email-validation-3/master/email-validation-3-dot-net/SOAP/ValidateEmailFull.cs
+ValidateEmailFullNoCorrections.cs,https://raw.githubusercontent.com/ServiceObjects/email-validation-3/master/email-validation-3-dot-net/SOAP/ValidateEmailFullNoCorrections.cs
