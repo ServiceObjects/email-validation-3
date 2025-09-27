@@ -14,7 +14,7 @@ namespace email_validation_3_dot_net_examples
 
             ValidateEmailAddressClient.ValidationEmailAddressInput validationEmailAddressInput = new
             (
-                EmailAddress: "Johan@gmail.com",
+                EmailAddress: "jan@serviceobjects.com",
                 LicenseKey: licenseKey,
                 AllowCorrections: "true",
                 IsLive: isLive,

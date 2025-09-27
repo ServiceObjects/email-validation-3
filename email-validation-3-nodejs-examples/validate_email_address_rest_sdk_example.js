@@ -6,7 +6,7 @@ export async function validateEmailAddressGo(licenseKey, isLive) {
     console.log("-----------------------------------------------------------");
 
     // Input Parameters
-    const emailAddress = "Johan@gmail.com";
+    const emailAddress = "jan@serviceobjects.com";
     const allowCorrections = "true";
     const timeout = "10000";
     const timeoutSeconds = 15;

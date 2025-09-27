@@ -34,24 +34,26 @@ Average mail server response times are approximately between 2-3 seconds, but so
 # 1. Build the input
 #
 # Required fields:
-#               EmailAddress
-#               AllowCorrections 
-#               Timeout
-#               LicenseKey
-#               IsLive
+#               email_address
+#               allow_corrections 
+#               timeout
+#               license_key
+#               is_live
 # 
 # Optional:
-#        TimeoutSeconds (default: 15)
-
-email_address = "Johan@gmail.com";
-allow_corrections = "true";
-timeout = "10000";
-timeoutSeconds = 15;
+#        timeout_seconds
 
 from validate_email_address_rest import validate_email_address
 
+email_address = "jan@serviceobjects.com";
+allow_corrections = "true";
+timeout = "10000";
+timeout_seconds = 15;
+is_live = True
+license_key = "YOUR LICENSE KEY"
+
 # 2. Call the method
-response = validate_email_address(email_address,allow_corrections,license_key,is_live,timeout,timeoutSeconds);
+response = validate_email_address(email_address, allow_corrections, license_key, is_live, timeout, timeout_seconds);
 
 # 3. Inspect results.
 if response.Error is None:
@@ -95,20 +97,23 @@ The average response time for this operation is approximately 2 seconds, but the
 # 1. Build the input
 #
 # Required fields:
-#               EmailAddress
-#               LicenseKey
-#               IsLive
+#               email_address
+#               license_key
+#               is_live
 # 
 # Optional:
-#        TimeoutSeconds (default: 15)
-
-email_address = "Soman@gmail.com";
-timeoutSeconds = 15;
+#        timeout_seconds
 
 from validate_email_full_soap import validate_email_full
 
+email_address = "jan@serviceobjects.com";
+timeout_seconds = 15;
+is_live = True
+license_key = "YOUR LICENSE KEY"
+
+
 # 2. Call the method
-response = validate_email_full(email_address,license_key,is_live,timeoutSeconds)
+response = validate_email_full(email_address, license_key, is_live, timeout_seconds)
 
 # 3. Inspect results.
 if response.Error is None:
@@ -150,20 +155,22 @@ The same as ValidateEmailFull but the service will not attempt to correct the em
 # 1. Build the input
 #
 # Required fields:
-#               EmailAddress
-#               LicenseKey
-#               IsLive
+#               email_address
+#               license_key
+#               is_live
 # 
 # Optional:
-#        TimeoutSeconds (default: 15)
-
-email_address = "Soman@gmail.com";
-timeoutSeconds = 15;
+#        timeout_seconds
 
 from validate_email_full_no_corrections_rest import validate_email_full_no_corrections
 
+email_address = "jan@serviceobjects.com";
+timeout_seconds = 15;
+is_live = True
+license_key = "YOUR LICENSE KEY"
+
 # 2. Call the method
-response = validate_email_full_no_corrections(email_address,license_key,is_live,timeoutSeconds);
+response = validate_email_full_no_corrections(email_address, license_key, is_live, timeout_seconds);
 
 # 3. Inspect results.
 if response.Error is None:
@@ -205,20 +212,22 @@ This operation has the same inputs and outputs as ValidateEmailFull. This check 
 # 1. Build the input
 #
 # Required fields:
-#               EmailAddress
-#               LicenseKey
-#               IsLive
+#               email_address
+#               license_key
+#               is_live
 # 
 # Optional:
-#        TimeoutSeconds (default: 15)
-
-email_address = "Soman@gmail.com";
-timeoutSeconds = 15;
+#        timeout_seconds
 
 from validate_email_fast_rest import validate_email_fast
 
+email_address = "jan@serviceobjects.com";
+timeout_seconds = 15;
+is_live = True
+license_key = "YOUR LICENSE KEY"
+
 # 2. Call the method
-response=validate_email_fast(email_address,license_key,is_live,timeoutSeconds)
+response=validate_email_fast(email_address, license_key, is_live, timeout_seconds)
 
 # 3. Inspect results.
 if response.Error is None:
@@ -260,20 +269,22 @@ The same as ValidateEmailFast but the service will not attempt to correct the em
 # 1. Build the input
 #
 # Required fields:
-#               EmailAddress
-#               LicenseKey
-#               IsLive
+#               email_address
+#               license_key
+#               is_live
 # 
 # Optional:
-#        TimeoutSeconds (default: 15)
-
-email_address = "Soman@gmail.com";
-timeoutSeconds = 15;
+#        timeout_seconds
 
 from validate_email_fast_no_corrections_rest import validate_email_fast_no_corrections
 
+email_address = "jan@serviceobjects.com";
+timeout_seconds = 15;
+is_live = True
+license_key = "YOUR LICENSE KEY"
+
 # 2. Call the method
- response=validate_email_full_no_corrections(email_address,license_key,is_live,timeoutSeconds)
+ response=validate_email_full_no_corrections(email_address, license_key, is_live, timeout_seconds)
 
 # 3. Inspect results.
 if response.Error is None:

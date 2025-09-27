@@ -10,17 +10,17 @@ def  validate_email_fast_no_corrections_rest_sdk_go(is_live: bool, license_key: 
     print("Email Validation 3 - ValidateEmailFastNoCorrectionsInput - REST SDK");
     print("-------------------------------------------------------------------");
  
-    email_address = "Soman@gmail.com";
-    timeoutSeconds = 15;
+    email_address = "jan@serviceobjects.com";
+    timeout_seconds = 15;
  
     print(f"\r\n* Input *\r\n");
     print(f"Email Address  : {email_address}");
     print(f"License Key    : {license_key}");
     print(f"Is Live        : {is_live}");
-    print(f"Timeout Seconds: {timeoutSeconds}");
+    print(f"Timeout Seconds: {timeout_seconds}");
 
     try:
-        response=validate_email_fast_no_corrections(email_address, license_key, is_live, timeoutSeconds)
+        response=validate_email_fast_no_corrections(email_address, license_key, is_live, timeout_seconds)
 
         if response.Error is None:
             print("\r\n* Email Validation Details *\r\n");

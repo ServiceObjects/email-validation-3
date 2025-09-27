@@ -10,17 +10,17 @@ def  validate_email_full_no_corrections_soap_sdk_go(is_live: bool, license_key: 
     print("Email Validation 3 - ValidateEmailFullNoCorrectionsInput - SOAP SDK");
     print("-------------------------------------------------------------------");
  
-    email_address = "Soman@gmail.com";
-    timeoutSeconds = 15;
+    email_address = "jan@serviceobjects.com";
+    timeout_seconds = 15;
  
     print(f"\r\n* Input *\r\n");
     print(f"Email Address  : {email_address}");
     print(f"License Key    : {license_key}");
     print(f"Is Live        : {is_live}");
-    print(f"Timeout Seconds: {timeoutSeconds}");
+    print(f"Timeout Seconds: {timeout_seconds}");
 
     try:
-        service =ValidateEmailFullNoCorrectionsSoap(license_key, is_live, timeoutSeconds)
+        service =ValidateEmailFullNoCorrectionsSoap(license_key, is_live, timeout_seconds)
         response=service.validate_email_full_no_corrections(email_address)
 
         if not hasattr(response, 'Error'):

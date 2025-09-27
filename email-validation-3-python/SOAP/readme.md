@@ -34,24 +34,26 @@ Average mail server response times are approximately between 2-3 seconds, but so
 # 1. Build the input
 #
 #  Required fields:
-#               EmailAddress
-#               AllowCorrections 
-#               Timeout
-#               LicenseKey
-#               IsLive
+#               email_address
+#               allow_corrections 
+#               timeout
+#               license_key
+#               is_live
 # 
 # Optional:
-#        TimeoutSeconds (default: 15)
-
-email_address = "Johan@gmail.com";
-allow_corrections = "true";
-timeout = "10000";
-timeoutSeconds = 15;
+#        timeout_seconds
 
 from validate_email_address_soap import ValidateEmailAddressSoap
 
+email_address = "jan@serviceobjects.com";
+allow_corrections = "true";
+timeout = "10000";
+timeout_seconds = 15;
+is_live = True
+license_key = "YOUR LICENSE KEY"
+
 # 2. Call the method
-service = ValidateEmailAddressSoap(license_key, is_live,timeoutSeconds)
+service = ValidateEmailAddressSoap(license_key, is_live, timeout_seconds)
 response=service.validate_email_address(email_address, allow_corrections, timeout)
 
 # 3. Inspect results.
@@ -95,21 +97,23 @@ The average response time for this operation is approximately 2 seconds, but the
 ```
 # 1. Build the input
 #
-#  Required fields:
-#               EmailAddress
-#               LicenseKey
-#               IsLive
+# Required fields:
+#               email_address
+#               license_key
+#               is_live
 # 
 # Optional:
-#        TimeoutSeconds (default: 15)
+#        timeout_seconds
 
-email_address = "Soman@gmail.com";
-timeoutSeconds = 15;
+from validate_email_full_soap import ValidateEmailFullSoap 
 
-from validate_email_full_soap import ValidateEmailFullSoap  
+email_address = "jan@serviceobjects.com";
+timeout_seconds = 15;
+is_live = True
+license_key = "YOUR LICENSE KEY"
 
 # 2. Call the method
-service = ValidateEmailFullSoap(license_key, is_live, timeoutSeconds)
+service = ValidateEmailFullSoap(license_key, is_live, timeout_seconds)
 response = service.validate_email_full(email_address)
 
 # 3. Inspect results.
@@ -151,21 +155,23 @@ The same as ValidateEmailFull but the service will not attempt to correct the em
 ```
 # 1. Build the input
 #
-#  Required fields:
-#               EmailAddress
-#               LicenseKey
-#               IsLive
+# Required fields:
+#               email_address
+#               license_key
+#               is_live
 # 
 # Optional:
-#        TimeoutSeconds (default: 15)
-
-email_address = "Soman@gmail.com";
-timeoutSeconds = 15;
+#        timeout_seconds
 
 from validate_email_full_no_corrections_soap import ValidateEmailFullNoCorrectionsSoap
 
+email_address = "jan@serviceobjects.com";
+timeout_seconds = 15;
+is_live = True
+license_key = "YOUR LICENSE KEY"
+
 # 2. Call the method
-service = ValidateEmailFastNoCorrectionsSoap(license_key, is_live, timeoutSeconds)
+service = ValidateEmailFastNoCorrectionsSoap(license_key, is_live, timeout_seconds)
 response = service.validate_email_fast_no_corrections(email_address)
 
 # 3. Inspect results.
@@ -207,22 +213,24 @@ This operation has the same inputs and outputs as ValidateEmailFull. This check 
 ```
 # 1. Build the input
 #
-#  Required fields:
-#               EmailAddress
-#               LicenseKey
-#               IsLive
+# Required fields:
+#               email_address
+#               license_key
+#               is_live
 # 
 # Optional:
-#        TimeoutSeconds (default: 15)
-
-email_address = "JohanVick@gmail.com";
-timeoutSeconds = 15;
+#        timeout_seconds
 
 from validate_email_fast_soap import ValidateEmailFastSoap
 
+email_address = "jan@serviceobjects.com";
+timeout_seconds = 15;
+is_live = True
+license_key = "YOUR LICENSE KEY"
+
 # 2. Call the method
- service = ValidateEmailFastSoap(license_key, is_live, timeoutSeconds)
- response = service.validate_email_fast(email_address)
+service = ValidateEmailFastSoap(license_key, is_live, timeout_seconds)
+response = service.validate_email_fast(email_address)
 
 # 3. Inspect results.
 if not hasattr(response, 'Error'):
@@ -271,13 +279,15 @@ The same as ValidateEmailFast but the service will not attempt to correct the em
 # Optional:
 #        TimeoutSeconds (default: 15)
 
-email_address = "Soman@gmail.com";
-timeoutSeconds = 15;
-
 from validate_email_full_no_corrections_soap import ValidateEmailFullNoCorrectionsSoap
 
+email_address = "jan@serviceobjects.com";
+timeout_seconds = 15;
+is_live = True
+license_key = "YOUR LICENSE KEY"
+
 # 2. Call the method
-service = ValidateEmailFullNoCorrectionsSoap(license_key, is_live, timeoutSeconds)
+service = ValidateEmailFullNoCorrectionsSoap(license_key, is_live, timeout_seconds)
 response = service.validate_email_full_no_corrections(email_address)
 
 # 3. Inspect results.

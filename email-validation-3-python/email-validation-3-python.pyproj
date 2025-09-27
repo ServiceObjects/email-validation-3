@@ -29,12 +29,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="REST\ev3_response.py" />
+    <Content Include="REST\manifest.csv" />
     <Content Include="REST\readme.md" />
     <Content Include="REST\validate_email_address_rest.py" />
     <Content Include="REST\validate_email_fast_no_corrections_rest.py" />
     <Content Include="REST\validate_email_fast_rest.py" />
     <Content Include="REST\validate_email_full_no_corrections_rest.py" />
     <Content Include="REST\validate_email_full_rest.py" />
+    <Content Include="SOAP\manifest.csv" />
     <Content Include="SOAP\readme.md" />
     <Content Include="SOAP\validate_email_address_soap.py" />
     <Content Include="SOAP\validate_email_fast_no_corrections_soap.py" />

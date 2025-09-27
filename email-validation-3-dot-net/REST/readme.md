@@ -41,15 +41,15 @@ Average mail server response times are approximately between 2-3 seconds, but so
 //               IsLive
 // 
 // Optional:
-//        TimeoutSeconds (default: 15)
+//        TimeoutSeconds
 
 using email_validation_3_dot_net.REST;
 
 ValidateEmailAddressClient.ValidationEmailAddressInput validationEmailAddressInput = new(
-    EmailAddress: "Johan@gmail.com",
+    EmailAddress: "jan@serviceobjects.com",
     LicenseKey: licenseKey,
     AllowCorrections: "true",
-    IsLive: isLive,
+    IsLive: true,
     Timeout:"10000",
     TimeoutSeconds: 15
 );
@@ -109,14 +109,14 @@ The average response time for this operation is approximately 2 seconds, but the
 //               IsLive
 // 
 // Optional:
-//        TimeoutSeconds (default: 15)
+//        TimeoutSeconds
 
 using email_validation_3_dot_net.REST;
 
 ValidateEmailFullClient.ValidateEmailFullInput validateEmailFullInput = new(
-    EmailAddress: "Johan@gmail.com",
+    EmailAddress: "jan@serviceobjects.com",
     LicenseKey: licenseKey,
-    IsLive: isLive,
+    IsLive: true,
     TimeoutSeconds: 15
 );
 
@@ -173,14 +173,14 @@ The same as ValidateEmailFull but the service will not attempt to correct the em
 //               IsLive
 // 
 // Optional:
-//        TimeoutSeconds (default: 15)
+//        TimeoutSeconds
 
 using email_validation_3_dot_net.REST;
 
 ValidateEmailFullNoCorrectionsClient.ValidateEmailFullNoCorrectionsInput validateEmailFullNoCorrectionsInput = new(
-    EmailAddress: "Johan@gmail.com",
+    EmailAddress: "jan@serviceobjects.com",
     LicenseKey: licenseKey,
-    IsLive: isLive,
+    IsLive: true,
     TimeoutSeconds: 15
 );
 
@@ -237,14 +237,14 @@ This operation has the same inputs and outputs as ValidateEmailFull. This check 
 //               IsLive
 // 
 // Optional:
-//        TimeoutSeconds (default: 15)
+//        TimeoutSeconds
 
 using email_validation_3_dot_net.REST;
 
 ValidateEmailFastClient.ValidateEmailFastInput validateEmailFastInput = new(
-    EmailAddress: "Johan@gmail.com",
+    EmailAddress: "jan@serviceobjects.com",
     LicenseKey: licenseKey,
-    IsLive: isLive,
+    IsLive: true,
     TimeoutSeconds: 15
 );
 

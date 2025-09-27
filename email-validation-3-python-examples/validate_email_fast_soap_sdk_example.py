@@ -11,16 +11,16 @@ def  validate_email_fast_soap_sdk_go(is_live: bool, license_key: str) -> None:
   print("------------------------------------------------------");
  
   email_address = "JohanVick@gmail.com";
-  timeoutSeconds = 15;
+  timeout_seconds = 15;
 
   print(f"\r\n* Input *\r\n");
   print(f"Email Address  : {email_address}");
   print(f"License Key    : {license_key}");
   print(f"Is Live        : {is_live}");
-  print(f"Timeout Seconds: {timeoutSeconds}");
+  print(f"Timeout Seconds: {timeout_seconds}");
 
   try:
-      service= ValidateEmailFastSoap(license_key, is_live, timeoutSeconds)
+      service= ValidateEmailFastSoap(license_key, is_live, timeout_seconds)
       response=service.validate_email_fast(email_address)
 
       if not hasattr(response, 'Error'):

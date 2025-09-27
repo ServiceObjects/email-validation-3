@@ -10,10 +10,10 @@ def validate_email_address_soap_sdk_go(is_live: bool, license_key: str) -> None:
     print("Email Validation 3 - ValidationEmailAddressInput - SOAP SDK");
     print("-----------------------------------------------------------");
 
-    email_address = "Johan@gmail.com";
+    email_address = "jan@serviceobjects.com";
     allow_corrections = "true";
     timeout = "10000";
-    timeoutSeconds = 15;
+    timeout_seconds = 15;
 
     print(f"\r\n* Input *\r\n");
     print(f"Email Address    : {email_address}");
@@ -21,11 +21,11 @@ def validate_email_address_soap_sdk_go(is_live: bool, license_key: str) -> None:
     print(f"Allow Corrections: {allow_corrections}");
     print(f"Is Live          : {is_live}");
     print(f"Timeout          : {timeout}");
-    print(f"Timeout Seconds  : {timeoutSeconds}");
+    print(f"Timeout Seconds  : {timeout_seconds}");
 
     try:
-        service = ValidateEmailAddressSoap(license_key, is_live, timeoutSeconds)
-        response=service.validate_email_address(email_address,allow_corrections,timeout)
+        service = ValidateEmailAddressSoap(license_key, is_live, timeout_seconds)
+        response=service.validate_email_address(email_address, allow_corrections, timeout)
 
         if not hasattr(response, 'Error'):
             print("\r\n* Email Validation Details *\r\n");

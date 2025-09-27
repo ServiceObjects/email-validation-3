@@ -11,7 +11,7 @@ namespace email_validation_3_dot_net_examples
             Console.WriteLine("Email Validation 3 - ValidateEmailFastInput - SOAP SDK");
             Console.WriteLine("------------------------------------------------------");
             ValidateEmailFastValidation validateEmailFastValidation = new ValidateEmailFastValidation(isLive);
-            string EmailAddress = "Johan@gmail.com";
+            string EmailAddress = "jan@serviceobjects.com";
             string LicenseKey = licenseKey;
 
             ValidateEmailResponse response = validateEmailFastValidation.ValidateEmailFast(EmailAddress, LicenseKey).Result;

@@ -34,24 +34,26 @@ Average mail server response times are approximately between 2-3 seconds, but so
 // 1. Build the input
 //
 //  Required fields:
-//               EmailAddress
-//               AllowCorrections 
-//               Timeout
-//               LicenseKey
-//               IsLive
+//               emailAddress
+//               allowCorrections 
+//               timeout
+//               licenseKey
+//               isLive
 // 
 // Optional:
-//        TimeoutSeconds (default: 15)
+//        timeoutSeconds
 
 import { ValidateEmailAddressSoap } from "../email-validation-3-nodejs/SOAP/validate_email_address_soap.js";
 
-const emailAddress = "Johan@gmail.com";
+const emailAddress = "jan@serviceobjects.com";
 const allowCorrections = "true";
 const timeout = "10000";
 const timeoutSeconds = 15;
+const isLive = true;
+const licenseKey = "YOUR LICENSE KEY"
 
 // 2. Call the method
-const ev3 = new ValidateEmailAddressSoap(emailAddress,allowCorrections,licenseKey,isLive,timeout,timeoutSeconds);
+const ev3 = new ValidateEmailAddressSoap(emailAddress, allowCorrections, licenseKey, isLive, timeout, timeoutSeconds);
 const response = await ev3.validateEmailAddress();
 
 // 3. Inspect results.
@@ -100,20 +102,22 @@ The average response time for this operation is approximately 2 seconds, but the
 // 1. Build the input
 //
 //  Required fields:
-//               EmailAddress
-//               LicenseKey
-//               IsLive
+//               emailAddress
+//               licenseKey
+//               isLive
 // 
 // Optional:
-//        TimeoutSeconds (default: 15)
+//        timeoutSeconds
 
 import { ValidateEmailFullSoap } from "../email-validation-3-nodejs/SOAP/validate_email_full_soap.js";
 
-const emailAddress = "Johan@gmail.com";
+const emailAddress = "jan@serviceobjects.com";
 const timeoutSeconds = 15;
+const isLive = true;
+const licenseKey = "YOUR LICENSE KEY"
 
 // 2. Call the method
-const ev3 = await ValidateEmailFullSoap(emailAddress,licenseKey,isLive,timeoutSeconds);
+const ev3 = await ValidateEmailFullSoap(emailAddress, licenseKey, isLive, timeoutSeconds);
 const response = await ev3.validateEmailFull();
 
 // 3. Inspect results.
@@ -159,20 +163,22 @@ The same as ValidateEmailFull but the service will not attempt to correct the em
 // 1. Build the input
 //
 //  Required fields:
-//               EmailAddress
-//               LicenseKey
-//               IsLive
+//               emailAddress
+//               licenseKey
+//               isLive
 // 
 // Optional:
-//        TimeoutSeconds (default: 15)
+//        timeoutSeconds
 
 import { ValidateEmailFullNoCorrectionsSoap } from "../email-validation-3-nodejs/SOAP/validate_email_full_no_corrections_soap.js";
 
-const emailAddress = "Johan@gmail.com";
+const emailAddress = "jan@serviceobjects.com";
 const timeoutSeconds = 15;
+const isLive = true;
+const licenseKey = "YOUR LICENSE KEY"
 
 // 2. Call the method
-const ev3 = await ValidateEmailFullNoCorrectionsSoap(emailAddress,licenseKey,isLive,timeoutSeconds);
+const ev3 = await ValidateEmailFullNoCorrectionsSoap(emailAddress, licenseKey, isLive, timeoutSeconds);
 const response = await ev3.validateEmailFullNoCorrections();
 
 // 3. Inspect results.
@@ -218,20 +224,22 @@ This operation has the same inputs and outputs as ValidateEmailFull. This check 
 // 1. Build the input
 //
 //  Required fields:
-//               EmailAddress
-//               LicenseKey
-//               IsLive
+//               emailAddress
+//               licenseKey
+//               isLive
 // 
 // Optional:
-//        TimeoutSeconds (default: 15)
+//        timeoutSeconds
 
 import { ValidateEmailFastSoap } from "../email-validation-3-nodejs/SOAP/validate_email_fast_soap.js";
 
-const emailAddress = "Johan@gmail.com";
+const emailAddress = "jan@serviceobjects.com";
 const timeoutSeconds = 15;
+const isLive = true;
+const licenseKey = "YOUR LICENSE KEY"
 
 // 2. Call the method
-const ev3 = await ValidateEmailFastSoap(emailAddress,licenseKey,isLive,timeoutSeconds);
+const ev3 = await ValidateEmailFastSoap(emailAddress, licenseKey, isLive, timeoutSeconds);
 const response = await ev3.validateEmailFast();
 
 // 3. Inspect results.
@@ -277,20 +285,22 @@ The same as ValidateEmailFast but the service will not attempt to correct the em
 // 1. Build the input
 //
 //  Required fields:
-//               EmailAddress
-//               LicenseKey
-//               IsLive
+//               emailAddress
+//               licenseKey
+//               isLive
 // 
 // Optional:
-//        TimeoutSeconds (default: 15)
+//        timeoutSeconds
 
 import { ValidateEmailFastNoCorrectionsSoap } from "../email-validation-3-nodejs/SOAP/validate_email_fast_no_corrections_soap.js";
 
-const emailAddress = "Johan@gmail.com";
+const emailAddress = "jan@serviceobjects.com";
 const timeoutSeconds = 15;
+const isLive = true;
+const licenseKey = "YOUR LICENSE KEY"
 
 // 2. Call the method
-const ev3 = await ValidateEmailFastNoCorrectionsSoap(emailAddress,licenseKey,isLive,timeoutSeconds);
+const ev3 = await ValidateEmailFastNoCorrectionsSoap(emailAddress, licenseKey, isLive, timeoutSeconds);
 const response = await ev3.validateEmailFastNoCorrections();
 
 // 3. Inspect results.

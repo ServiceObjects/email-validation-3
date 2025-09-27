@@ -10,10 +10,10 @@ def validate_email_address_rest_sdk_go(is_live: bool, license_key: str) -> None:
     print("Email Validation 3 - ValidationEmailAddressInput - REST SDK");
     print("-----------------------------------------------------------");
 
-    email_address = "Johan@gmail.com";
+    email_address = "jan@serviceobjects.com";
     allow_corrections = "true";
     timeout = "10000";
-    timeoutSeconds = 15;
+    timeout_seconds = 15;
  
     print(f"\r\n* Input *\r\n");
     print(f"Email Address    : {email_address}");
@@ -21,10 +21,10 @@ def validate_email_address_rest_sdk_go(is_live: bool, license_key: str) -> None:
     print(f"Allow Corrections: {allow_corrections}");
     print(f"Is Live          : {is_live}");
     print(f"Timeout          : {timeout}");
-    print(f"Timeout Seconds  : {timeoutSeconds}");
+    print(f"Timeout Seconds  : {timeout_seconds}");
 
     try:
-        response=validate_email_address(email_address, allow_corrections, license_key, timeout, is_live, timeoutSeconds)
+        response=validate_email_address(email_address, allow_corrections, license_key, timeout, is_live, timeout_seconds)
 
         if response.Error is None:
             print("\r\n* Email Validation Details *\r\n");

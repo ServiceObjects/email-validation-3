@@ -34,21 +34,23 @@ Average mail server response times are approximately between 2-3 seconds, but so
 // 1. Build the input
 //
 //  Required fields:
-//               EmailAddress
-//               AllowCorrections 
-//               Timeout
-//               LicenseKey
-//               IsLive
+//               emailAddress
+//               allowCorrections 
+//               timeout
+//               licenseKey
+//               isLive
 // 
 // Optional:
-//        TimeoutSeconds (default: 15)
+//        timeoutSeconds
 
 import { ValidateEmailAddressClient } from "../email-validation-3-nodejs/REST/validate_email_address_rest.js";
 
-const emailAddress = "Johan@gmail.com";
+const emailAddress = "jan@serviceobjects.com";
 const allowCorrections = "true";
 const timeout = "10000";
 const timeoutSeconds = 15;
+const isLive = true;
+const licenseKey = "YOUR LICENSE KEY"
 
 // 2. Call the sync InvokeAsync() method.
 const response = await ValidateEmailAddressClient.invokeAsync(
@@ -104,17 +106,19 @@ The average response time for this operation is approximately 2 seconds, but the
 // 1. Build the input
 //
 //  Required fields:
-//               EmailAddress
-//               LicenseKey
-//               IsLive
+//               emailAddress
+//               licenseKey
+//               isLive
 // 
 // Optional:
-//        TimeoutSeconds (default: 15)
+//        timeoutSeconds
 
 import { ValidateEmailFullClient } from "../email-validation-3-nodejs/REST/validate_email_full_rest.js";
 
-const emailAddress = "Johan@gmail.com";
+const emailAddress = "jan@serviceobjects.com";
 const timeoutSeconds = 15;
+const isLive = true;
+const licenseKey = "YOUR LICENSE KEY"
 
 // 2. Call the sync InvokeAsync() method.
 const response = await ValidateEmailFullClient.invokeAsync(
@@ -167,17 +171,19 @@ The same as ValidateEmailFull but the service will not attempt to correct the em
 // 1. Build the input
 //
 //  Required fields:
-//               EmailAddress
-//               LicenseKey
-//               IsLive
+//               emailAddress
+//               licenseKey
+//               isLive
 // 
 // Optional:
-//        TimeoutSeconds (default: 15)
+//        timeoutSeconds
 
 import { ValidateEmailFullNoCorrectionsClient } from "../email-validation-3-nodejs/REST/validate_email_full_no_corrections_rest.js";
 
-const emailAddress = "Johan@gmail.com";
+const emailAddress = "jan@serviceobjects.com";
 const timeoutSeconds = 15;
+const isLive = true;
+const licenseKey = "YOUR LICENSE KEY"
 
 // 2. Call the method
 const response = await ValidateEmailFullNoCorrectionsClient.invokeAsync(
@@ -230,17 +236,19 @@ This operation has the same inputs and outputs as ValidateEmailFull. This check 
 // 1. Build the input
 //
 //  Required fields:
-//               EmailAddress
-//               LicenseKey
-//               IsLive
+//               emailAddress
+//               licenseKey
+//               isLive
 // 
 // Optional:
-//        TimeoutSeconds (default: 15)
+//        timeoutSeconds
 
 import { ValidateEmailFastClient } from "../email-validation-3-nodejs/REST/validate_email_fast_rest.js";
 
-const emailAddress = "Johan@gmail.com";
+const emailAddress = "jan@serviceobjects.com";
 const timeoutSeconds = 15;
+const isLive = true;
+const licenseKey = "YOUR LICENSE KEY"
 
 // 2. Call the method
 const response = await ValidateEmailFastClient.invokeAsync(
@@ -293,17 +301,19 @@ The same as ValidateEmailFast but the service will not attempt to correct the em
 // 1. Build the input
 //
 //  Required fields:
-//               EmailAddress
-//               LicenseKey
-//               IsLive
+//               emailAddress
+//               licenseKey
+//               isLive
 // 
 // Optional:
-//        TimeoutSeconds (default: 15)
+//        timeoutSeconds
 
 import { ValidateEmailFastNoCorrectionsClient } from "../email-validation-3-nodejs/REST/validate_email_fast_no_corrections_rest.js";
 
-const emailAddress = "Johan@gmail.com";
+const emailAddress = "jan@serviceobjects.com";
 const timeoutSeconds = 15;
+const isLive = true;
+const licenseKey = "YOUR LICENSE KEY"
 
 // 2. Call the method
 const response = await ValidateEmailFastNoCorrectionsClient.invokeAsync(

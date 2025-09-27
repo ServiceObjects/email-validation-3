@@ -11,7 +11,7 @@ namespace email_validation_3_dot_net_examples
             Console.WriteLine("Email Validation 3 - ValidationEmailAddressInput - SOAP SDK");
             Console.WriteLine("-----------------------------------------------------------");
             ValidateEmailAddressValidation validateEmailAddressValidation = new ValidateEmailAddressValidation(isLive);
-            string EmailAddress = "Johan@gmail.com";
+            string EmailAddress = "jan@serviceobjects.com";
             string AllowCorrections = "true";
             string Timeout = "10000";
             string LicenseKey = licenseKey; 
