@@ -1,4 +1,3 @@
-import { EV3Response } from "../SOAP/ev3_response.js";
 import { soap } from "strong-soap";
 
 /**
@@ -90,8 +89,7 @@ class ValidateEmailFullNoCorrectionsSoap {
                         if (!rawData) {
                             return reject(new Error("SOAP response is empty or undefined."));
                         }
-                        const parsed = new EV3Response(rawData);
-                        resolve(parsed);
+                        resolve(rawData);
                     } catch (parseErr) {
                         reject(new Error(`Failed to parse SOAP response: ${parseErr.message}`));
                     }

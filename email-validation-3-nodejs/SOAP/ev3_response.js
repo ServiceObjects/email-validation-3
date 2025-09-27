@@ -1,4 +1,4 @@
-export class ErrorModel {
+xport class ErrorModel {
     constructor(data = {}) {
         this.Type = data.Type || null;
         this.TypeCode = data.TypeCode || null;
