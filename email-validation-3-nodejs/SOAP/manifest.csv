@@ -1,5 +1,4 @@
 Filename,RawURL
-ev3_response.js,https://raw.githubusercontent.com/ServiceObjects/email-validation-3/master/email-validation-3-nodejs/SOAP/ev3_response.js
 readme.md,https://raw.githubusercontent.com/ServiceObjects/email-validation-3/master/email-validation-3-nodejs/SOAP/readme.md
 validate_email_address_soap.js,https://raw.githubusercontent.com/ServiceObjects/email-validation-3/master/email-validation-3-nodejs/SOAP/validate_email_address_soap.js
 validate_email_fast_no_corrections_soap.js,https://raw.githubusercontent.com/ServiceObjects/email-validation-3/master/email-validation-3-nodejs/SOAP/validate_email_fast_no_corrections_soap.js
